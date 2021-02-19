@@ -1,2 +1,2 @@
 # Honda
-Honda website using Javascript(ES6,axios), jquery, CSS(SCSS) 
+Honda website using Javascript(ES6), Jquery, CSS(SCSS) 
