@@ -1,0 +1,135 @@
+.container--config{
+    padding: 0 $pd-7;
+}
+
+#vehicles {
+background-color: $color-blue-overlay;
+    #vehicle-content {
+    position: relative;
+        .vehicle-nav{
+            background-color:$color-white;
+            text-align: center;
+            padding: $pd-3 0;
+            ul{
+                list-style:none;
+                margin: 0;
+                li{
+                    display:inline;
+                    a{
+                        padding: $pd-1 $pd-4;
+                        font-weight: $font-weight-bold;
+                        color: $color-dark-blue;
+                        border-right: $border-2;
+                        font-size: $font-size-1;
+                        &:hover {
+                            color: $color-blue-200;
+                            text-decoration: none;
+                        }
+                        .marker{
+                            padding: $pd-1 $pd-1;
+                        }
+                    }               
+                }
+                li.active{
+                    a {
+                        color: $color-blue-200;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    #vehicle-list {
+        background-color: $color-grey;
+        padding: $pd-6;
+        padding-bottom: $pd-6 / 2 ;
+        max-height: 890px;
+        .vehicle-title{
+            h1{
+                background-color: $color-grey;
+                position:relative;
+                top:$mg-up-2;
+                padding: 0 $pd-1;
+                color:$color-dark-blue;
+                font-weight: $font-size-3;
+                i{
+                    font-size: $font-size-3 * 0.5;
+                    position:relative;
+                    top:$mg-up-1;
+                }
+                span{
+                    font-weight: $font-weight-normal;
+                }
+            }
+        }
+        .vehicle-product{
+            &:hover >  .vehicle-img img:last-child {
+                display:block;
+            }
+            &:hover >  .vehicle-img img:first-child {
+                display:none;
+            }
+            color:$color-dark-blue;
+            margin-bottom: $mg-3;
+            .vehicle-img img:last-child{
+                display:none;
+            }
+            h2{
+                font-size: $font-size-2;
+                font-weight:$font-weight-bold;
+                margin-bottom: $mg-1;
+            }
+            .vehicle.info{
+                margin-bottom: $mg-2;
+                h3{
+                    font-weight: $font-weight-normal;
+                    font-size: $font-size-3;
+                }
+                p{
+                    font-size:$font-size-1;
+                    margin-bottom:$mg-1;
+                }
+            }
+        }
+       
+    }
+    #vehicle-close{
+        background-color:#f6f6f6;
+        width: 70px;
+        padding: $pd-1;
+        text-align: center;
+        position: absolute;
+        left: 95%;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+        cursor: pointer;
+        color: $color-blue-100;
+        &:hover > .vehicle-circle {
+            border: 1px solid $color-dark-blue;
+
+        }
+       &:hover{
+           color: $color-dark-blue;
+       }
+        .vehicle-circle{
+            width: 25px;
+            height: 25px;
+            border: 1px solid $color-blue-100;
+            border-radius: 50%;
+           text-align: center;
+           margin: auto;
+            i {
+                font-size: $font-size-1;
+                line-height: 25px ;
+            }
+    }
+    p {
+        font-size: $font-size-1;
+        font-weight: $font-weight-bold;
+        color: $color-blue-100;
+    }
+    }
+}
+.hide-vehicle {
+    display:none;
+}

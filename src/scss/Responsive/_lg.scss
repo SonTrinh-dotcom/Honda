@@ -1,0 +1,59 @@
+#search-area {
+    @media screen and (max-width:1200px){
+        padding: $pd-2 $pd-3;
+    }
+    input {
+        @media screen and (max-width:1200px){
+            width: 80%;
+        }
+    }
+}
+#our-vehicle {
+    @media screen and (max-width:1200px){ 
+        position: absolute;
+  
+    }
+    
+
+    .carousel-caption-config{
+      @media screen and (max-width:1200px){
+            text-align:center;
+            margin:auto;
+            width: 60%;
+            left: 8%;
+            bottom: 10%;
+            top: unset;
+            font-size: $font-size-1 - 0.2; 
+            }
+            .carousel-caption-detail{
+                .carousel-detail-content{
+                    h2{
+                        @media screen and (max-width:1200px){
+                        font-size: $font-size-3;
+                        }
+                    }
+                    p {
+                        @media screen and (max-width:1200px){
+                            font-size: $font-size-1 - 0.2;
+                            }
+                    }
+                }
+            }
+            .civic-image{
+                margin: auto;
+            }
+    }
+    .carousel-caption-footer {
+        @media screen and (max-width:1200px){
+            width: 100%;
+            bottom: 2%;
+            border:none;
+            justify-content: center;
+        }
+    }
+    .carousel-control-next{
+        @media screen and (max-width:1200px){
+            right: 2rem;
+        }
+    }
+}

@@ -1,0 +1,156 @@
+#navbar {
+    a{
+        @media screen and (max-width: 768px) {
+            padding: $pd-2;
+        }
+    }
+    a:first-child {
+        @media screen and (max-width: 768px) {
+            padding:  $pd-2;
+        }
+    }
+    .navbar-collapse {
+        @media screen and (max-width: 768px){
+            border-top: $border-2;
+        }
+    }
+    .discover-menu {
+        &::before {
+            @media screen and (max-width:768px){
+                @include arrow (7%,unset);
+                top:4.5rem;
+            }
+        }
+    }
+}
+#search-area {
+    @media screen and (max-width:768px){
+        padding: $pd-2 $pd-3;
+    }
+    input {
+        @media screen and (max-width:768px){
+            width: 80%;
+        }
+    }
+}
+#search-area-xs{
+    @media screen and (max-width:768px){
+        padding: $pd-1 $pd-1;
+        background-color: $color-blue-100;
+        &::before {
+            @media screen and (max-width:768px){
+                border-bottom-width: 0;
+            }
+        }
+    i {
+        @media screen and (max-width:768px) {
+            color: $color-white;
+            font-size: $font-size-1;
+        }
+    }
+    input {
+        @media screen and (max-width:768px){
+            width: 60%;
+            height: 2rem;
+            border:2px solid white;
+            height: 3rem;
+            border-radius: 5px;
+            padding-bottom: $pd-1;
+            padding-left: $pd-1;
+            font-size: $font-size-1;
+            color: $color-white;
+            background-color: transparent;
+        }
+        &::placeholder {
+            @media screen and (max-width:768px){ 
+                font-size: $font-size-1;
+                color: $color-white;
+
+            }
+        }
+        
+    }
+}
+}
+.intro {
+    .intro-container {
+        .intro-right {
+            @media screen and (max-width:768px){
+                margin-top: 50px  !important;
+                
+            }
+        }
+        }
+    }
+#our-vehicle {
+    .carousel-control-prev, .carousel-control-next {
+        i {
+            @media screen and (max-width:768px){ 
+                padding: $pd-1 $pd-1;
+                font-size: 2.5rem;
+          
+            }
+        }
+    }
+    .carousel-inner { 
+         @media screen and (max-width:768px){ 
+        width: 90%;
+        left: 5%;
+    }
+    }
+    .carousel-indicators-config{
+        li {
+            @media screen and (max-width:768px){ 
+            font-size: ($font-size-1)-0.5;
+            }
+        }
+    }
+    @media screen and (max-width:768px){ 
+        position: absolute;
+        left: 5%;
+  
+    }
+    
+
+    .carousel-caption-config{
+      @media screen and (max-width:768px){
+            text-align:center;
+            margin:auto;
+            width: 60%;
+            left: 8%;
+            bottom: -30%;
+            top: unset;
+            font-size: $font-size-1 - 0.5; 
+            }
+            .carousel-caption-detail{
+                .carousel-detail-content{
+                    h2{
+                        @media screen and (max-width:768px){
+                        font-size: $font-size-3 - 0.5;
+                        }
+                    }
+                    p {
+                        @media screen and (max-width:768px){
+                            font-size: $font-size-1 - 0.5;
+                            }
+                    }
+                }
+            }
+            .civic-image{
+                margin: auto;
+            }
+    }
+    .carousel-caption-footer {
+        @media screen and (max-width:768px){
+            width: 100%;
+            bottom: 10%;
+            border:none;
+            justify-content: center;
+        }
+    }
+    .carousel-control-next{
+        @media screen and (max-width:768px){
+            right: 2rem;
+        }
+    }
+}
